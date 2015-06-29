@@ -7,7 +7,7 @@ Type this into the developer console
 var agario_hack = document.createElement('script');
 agario_hack.async = true;
 agario_hack.type = 'text/javascript';
-agario_hack.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + '//raw.githubusercontent.com/D3strukt0rLP/agario-hack/master/agario-hack.js';
+agario_hack.src = '//d3strukt0rlp.github.io/agario-hack/agario-hack.js';
 var node = document.getElementsByTagName('script')[0];
 node.parentNode.insertBefore(agario_hack, node);
 ```
