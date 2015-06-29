@@ -1,5 +1,6 @@
+(function() {
 $("html").prepend("" +
-"<div id=\"agario-hack-overlay\" style=\"position:absolute;left:10;top:10;z-index:300;\">" +
+"<div id=\"agario-hack-overlay\" style=\"position:absolute;z-index:1000;\">" +
 	"<div class=\"panel panel-default\">" +
 		"<div class=\"panel-body\">" +
 			"Test if it shows up :)" +
@@ -7,3 +8,4 @@ $("html").prepend("" +
 	"<div>" +
 "</div>"
 );
+})()
