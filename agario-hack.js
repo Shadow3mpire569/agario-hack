@@ -41,6 +41,7 @@ var Config = {
 		$("#helloDialog").children().filter(function() {
 			return $(this).css('margin-bottom') == '7px';
 		}).remove();
+		$("#adsBottom").remove();
 	};
 	
 	init();
