@@ -10,7 +10,8 @@ var Config = {
 		"darktheme" : "Dark Theme",
 		"nocolors" : "No colors",
 		"showmass" : "Show mass",
-		"acid" : "Acid (Blur)"
+		"acid" : "Acid (Blur)",
+		"removeadd" : "Remove Advertisement"
 	}
 };
 
@@ -30,8 +31,13 @@ var Config = {
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setDarkTheme($(this).is(':checked'));\" /> " + Config.text.darktheme + "</p></label><br />");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setColors($(this).is(':checked'));\" /> " + Config.text.nocolors + "</p></label><br />");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setShowMass($(this).is(':checked'));\" /> " + Config.text.showmass + "</p></label><br />");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setAcid($(this).is(':checked'));\" /> " + Config.text.acid + "</p></label>");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setAcid($(this).is(':checked'));\" /> " + Config.text.acid + "</p></label><br />");
+		element.append("<label><p><button class=\"btn btn-danger\" onclick=\"removeAdvertisement();\" /> " + Config.text.removeadd + "</button></p></label>");
 	}
+	
+	window.removeAdvertisement = function() {
+		$("#helloDialog > center").remove();
+	};
 	
 	init();
 })()
