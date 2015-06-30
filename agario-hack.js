@@ -1,7 +1,8 @@
 var Config = {
 	"product" : {
 		"name" : "Titanium",
-		"vendor" : "OrbitronDev"
+		"vendor" : "OrbitronDev",
+		"url" : "organisation.orbitrondev.com"
 	},
 	"text" : {
 		"loading" : "Loading . . .",
