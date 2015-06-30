@@ -13,7 +13,7 @@ var Config = {
 (function() {
 	
 	function init() {
-		$("html").prepend("<div id=\"agario-hack-overlay\" style=\"position:absolute;z-index:1000;\"><div class=\"panel panel-default\"><div id=\"agario-hack-content\" class=\"panel-body\"><h2>" + Config.text.loading + "</h2></div><div></div>");
+		$("body").prepend("<div id=\"agario-hack-overlay\" style=\"position:absolute;z-index:1000;\"><div class=\"panel panel-default\"><div id=\"agario-hack-content\" class=\"panel-body\"><h2>" + Config.text.loading + "</h2></div><div></div>");
 		addOptions($("#agario-hack-content"));
 	}
 	
