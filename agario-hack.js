@@ -1,6 +1,7 @@
 var Config = {
 	"product" : {
 		"name" : "Titanium",
+		"version" : "1.0.0",
 		"vendor" : "OrbitronDev",
 		"url" : "organisation.orbitrondev.com"
 	},
@@ -20,7 +21,7 @@ var Config = {
 	
 	function init() {
 		$("body").prepend("<div id=\"agario-hack-overlay\" class=\"panel panel-default\" style=\"position:absolute;top:10px;left:10px;z-index:1000;\"></div>");
-		$("#agario-hack-overlay").append("<div class=\"panel-heading\"><h4><b>" + Config.product.name + " by " + Config.product.vendor + "</b></h4></div>");
+		$("#agario-hack-overlay").append("<div class=\"panel-heading\"><h4><b>" + Config.product.name + " v" + Config.product.version + " by " + Config.product.vendor + "</b></h4></div>");
 		$("#agario-hack-overlay").append("<div id=\"agario-hack-content\" class=\"panel-body\"><h2>" + Config.text.loading + "</h2></div>");
 		addOptions($("#agario-hack-content"));
 	}
