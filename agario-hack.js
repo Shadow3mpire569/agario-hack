@@ -19,12 +19,12 @@ var Config = {
 	
 	function addOptions(element) {
 		element.html("<h3>OrbitronDev Titanium</h3>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setSkins(!$(this).is(':checked'));\"> " + Config.text.noskins + "</p></label>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setNames(!$(this).is(':checked'));\"> " + Config.text.nonames + "</p></label>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setDarkTheme($(this).is(':checked'));\"> " + Config.text.darktheme + "</p></label>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setColors($(this).is(':checked'));\"> " + Config.text.nocolors + "</p></label>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setShowMass($(this).is(':checked'));\"> " + Config.text.showmass + "</p></label>");
-		element.append("<label><p><input type=\"checkbox\" onchange=\"setAcid($(this).is(':checked'));\"> " + Config.text.acid + "</p></label>");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setSkins(!$(this).is(':checked'));\" /> " + Config.text.noskins + "</p></label><br />");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setNames(!$(this).is(':checked'));\" /> " + Config.text.nonames + "</p></label><br />");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setDarkTheme($(this).is(':checked'));\" /> " + Config.text.darktheme + "</p></label><br />");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setColors($(this).is(':checked'));\" /> " + Config.text.nocolors + "</p></label><br />");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setShowMass($(this).is(':checked'));\" /> " + Config.text.showmass + "</p></label><br />");
+		element.append("<label><p><input type=\"checkbox\" onchange=\"setAcid($(this).is(':checked'));\" /> " + Config.text.acid + "</p></label>");
 	}
 	
 	init();
