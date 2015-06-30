@@ -32,11 +32,14 @@ var Config = {
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setColors($(this).is(':checked'));\" /> " + Config.text.nocolors + "</p></label><br />");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setShowMass($(this).is(':checked'));\" /> " + Config.text.showmass + "</p></label><br />");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setAcid($(this).is(':checked'));\" /> " + Config.text.acid + "</p></label><br />");
-		element.append("<label><p><button class=\"btn btn-danger\" onclick=\"removeAdvertisement();\" /> " + Config.text.removeadd + "</button></p></label>");
+		element.append("<label><p><button class=\"btn btn-danger\" onclick=\"removeAdvertisement();\"> " + Config.text.removeadd + "</button></p></label>");
 	}
 	
 	window.removeAdvertisement = function() {
 		$("#helloDialog > center").remove();
+		$("#helloDialog").children().filter(function() {
+			return $(this).css('margin-bottom') == '7px';
+		}).remove();
 	};
 	
 	init();
