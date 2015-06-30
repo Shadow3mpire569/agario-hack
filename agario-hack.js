@@ -18,7 +18,7 @@ var Config = {
 	}
 	
 	function addOptions(element) {
-		element.html("");
+		element.html("<h3>OrbitronDev Titanium</h3>");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setSkins(!$(this).is(':checked'));\"> " + Config.text.noskins + "</p></label>");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setNames(!$(this).is(':checked'));\"> " + Config.text.nonames + "</p></label>");
 		element.append("<label><p><input type=\"checkbox\" onchange=\"setDarkTheme($(this).is(':checked'));\"> " + Config.text.darktheme + "</p></label>");
