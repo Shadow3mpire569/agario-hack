@@ -25,12 +25,20 @@
 <p>Using this tool, gives you the ability to hack agar.io easily. And the best part is, its FREE and OPEN SOURCE.
 To start with it click <code>F12</code> on your keyboard and search for <code>Console</code> or similar things. Copy and Paste the code below and hit enter to start.</p>
 
+<h4>
+<a id="install-script-in-html" class="anchor" href="#install-script-in-html" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install script in HTML</h4>
+
 <div class="highlight highlight-javascript"><pre><span class="pl-k">var</span> agario_hack <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">createElement</span>(<span class="pl-s"><span class="pl-pds">'</span>script<span class="pl-pds">'</span></span>);
 agario_hack.async <span class="pl-k">=</span> <span class="pl-c1">true</span>;
 agario_hack.<span class="pl-c1">type</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>text/javascript<span class="pl-pds">'</span></span>;
 agario_hack.src <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>//d3strukt0rlp.github.io/agario-hack/agario-hack.js<span class="pl-pds">'</span></span>;
 <span class="pl-k">var</span> node <span class="pl-k">=</span> <span class="pl-c1">document</span>.<span class="pl-c1">getElementsByTagName</span>(<span class="pl-s"><span class="pl-pds">'</span>script<span class="pl-pds">'</span></span>)[<span class="pl-c1">0</span>];
 node.<span class="pl-c1">parentNode</span>.<span class="pl-c1">insertBefore</span>(agario_hack, node);</pre></div>
+
+<h4>
+<a id="only-load-and-execute-script" class="anchor" href="#only-load-and-execute-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>Only load and execute script</h4>
+
+<div class="highlight highlight-javascript"><pre>$.getScript(<span class="pl-s"><span class="pl-pds">"</span>//d3strukt0rlp.github.io/agario-hack/agario-hack.js<span class="pl-pds">"</span></span>)</pre></div>
 
 <p><strong>Ignore the text below</strong></p>
 
