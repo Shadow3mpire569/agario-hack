@@ -45,5 +45,28 @@ var Config = {
 		$("#adsBottom").remove();
 	};
 	
+	window.onkeydown = function(event) {
+		if(49 == event.keyCode) { // 1 = No Skins
+			console.log("[Titanium] Toggle No Skins");
+			window.setSkins(!Ra);
+		}
+		if (50 == event.keyCode) { // 2 = No Names
+			console.log("[Titanium] Toggle No Names");
+			window.setNames(!na);
+		}
+		if (51 == event.keyCode) { // 3 = Dark Theme
+			window.setDarkTheme(!ka);
+		}
+		if (52 == event.keyCode) { // 4 = No Colors
+			window.setColors(!za);
+		}
+		if (53 == event.keyCode) { // 5 = No Colors
+			window.setShowMass(!Sa);
+		}
+		if (54 == event.keyCode) { // 6 = Acid
+			window.setAcid(!xa);
+		}
+	}
+	
 	init();
 })()
