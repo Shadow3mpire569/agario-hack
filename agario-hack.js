@@ -1,3 +1,20 @@
+/*
+$.get("https://d3strukt0rlp.github.io/agario-hack/agario-hack.js", function(data) {
+	var latestVersion = data.replace(/(\r\n|\n|\r)/gm,"");
+	latestVersion = latestVersion.substring(latestVersion.indexOf("// @version") + 11, latestVersion.indexOf("// @grant"));
+
+	latestVersion = parseFloat(latestVersion + 0.0000);
+    var myVersion = parseFloat(GM_info.script.version + 0.0000); 
+	
+	if(latestVersion > myVersion) {
+		alert("Update Available for Titanium4Agar.user.js: v" + latestVersion + "\nGet the latest version from the GitHub page.");
+        window.open('https://d3strukt0rlp.github.io/agario-hack/agario-hack.js','_blank');
+	}
+	console.log('Current Titanium4Agar.user.js Version: ' + myVersion + " on Github: " + latestVersion);
+});
+*/
+console.log("Running Titanium4Agar!");
+
 var Config = {
 	"product" : {
 		"name" : "Titanium",
